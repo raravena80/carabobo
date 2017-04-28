@@ -6,7 +6,7 @@ create a new json string or output with the character removed from the 'keys'.
 Solutions is in Ruby:
 
 - nested.json: Sample json file
-- jsonkeys.go: Actual code
+- jsonkeys.go: Actual code. Run with: go run jsonkeys.go
 
 I also provided a solution to this problem in this question:
 
