@@ -1,0 +1,15 @@
+<timestamp> Non event
+<timestamp> Begin Recording
+<timestamp> event a
+<timestamp> event b
+<timestamp> event c
+<timestamp> event d
+<timestamp> End Recording
+<timestamp> Non event
+<timestamp> Non event
+<timestamp> Non event
+<timestamp> Non event
+<timestamp> Begin Recording
+<timestamp> event e
+<timestamp> event f
+<timestamp> End Recording
