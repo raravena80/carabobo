@@ -1,4 +1,4 @@
-# change_json_keys in Go
+# jsonkeys in Go
 
 The problem is given a json string with an unwanted character in their 'keys',
 create a new json string or output with the character removed from the 'keys'.
@@ -6,7 +6,7 @@ create a new json string or output with the character removed from the 'keys'.
 Solutions is in Ruby:
 
 - nested.json: Sample json file
-- change_json_keys.go: Actual code
+- jsonkeys.go: Actual code
 
 I also provided a solution to this problem in this question:
 
