@@ -1,7 +1,7 @@
 # logp -- Log Parser
 
 Problem is given a log file like this:
-
+```
 <timestamp> Non event
 <timestamp> Begin Recording
 <timestamp> event a
@@ -17,7 +17,7 @@ Problem is given a log file like this:
 <timestamp> event e
 <timestamp> event f
 <timestamp> End Recording
-
+```
 Capture all the 'event x' lines only
 
 
