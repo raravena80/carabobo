@@ -14,13 +14,12 @@ func parents() {
 	)
 	arr := [][]int{{1, 3}, {2, 3}, {3, 6}, {5, 6},
 		{5, 7}, {4, 5}, {4, 8}, {8, 9}}
-	//n := len(arr) - 1
 	parents = make(map[int]int)
 	for _, e := range arr {
 		if _, ok := parents[e[0]]; !ok {
 			parents[e[0]] = 0
 		}
-		if _, ok2 := parents[e[1]]; !ok2 {
+		if _, ok := parents[e[1]]; !ok {
 			parents[e[1]] = 1
 		} else {
 			parents[e[1]] = parents[e[1]] + 1
