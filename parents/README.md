@@ -34,3 +34,4 @@ parent_child_pairs = [[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [8
 Solution is in Go:
 
 - parents.go - Solution in Go. Run with: go run parents.go
+- parents2.go - Alternativeolution in Go. Run with: go run parents2.go
