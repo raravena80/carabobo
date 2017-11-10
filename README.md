@@ -1,4 +1,4 @@
-# carabobo
+# carabobo [![Go Report Card](https://goreportcard.com/badge/github.com/raravena80/carabobo)](https://goreportcard.com/report/github.com/raravena80/carabobo)
 This is a series for solutions in Go for problems I've come across online or in job interviews.
 
 The name Carabobo is just a random name based on the state in Venezuela.
