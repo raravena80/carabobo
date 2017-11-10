@@ -40,14 +40,14 @@ func main() {
 		dinosaurs[i[0]]["stride"] = i[1]
 		dinosaurs[i[0]]["food"] = i[2]
 	}
-	for k, _ := range dinosaurs {
+	for k := range dinosaurs {
 		stride, _ := strconv.ParseFloat(dinosaurs[k]["stride"], 64)
 		length, _ := strconv.ParseFloat(dinosaurs[k]["length"], 64)
 		dinosaurs[k]["speed"] = strconv.FormatFloat(stride*length, 'E', -1, 64)
 	}
 	// Create sorted slice [[Name, Speed], [Name, Speed]]
 	sorted := [][]string{}
-	for k, _ := range dinosaurs {
+	for k := range dinosaurs {
 		if dinosaurs[k]["stance"] == "bipedal" {
 			sorted = append(sorted, []string{k, dinosaurs[k]["speed"]})
 		}
