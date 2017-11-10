@@ -1,4 +1,5 @@
 package main
+
 /*
 This is an altertive solution using for like while loops in
 other languages

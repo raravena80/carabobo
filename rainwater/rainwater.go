@@ -7,7 +7,7 @@ import (
 
 func main() {
 	var (
-		left []int
+		left  []int
 		right []int
 	)
 	// initializing lists
@@ -17,13 +17,13 @@ func main() {
 	left = make([]int, n)
 	right = make([]int, n)
 	left[0] = topo[0]
-        for t := 1; t < n; t++ {
+	for t := 1; t < n; t++ {
 		left[t] = int(math.Max(float64(left[t-1]), float64(topo[t])))
 	}
 
-	right[n - 1] = topo[n - 1]
+	right[n-1] = topo[n-1]
 	for t := n - 2; t >= 0; t-- {
-		right[t] = int(math.Max(float64(right[t + 1]), float64(topo[t])))
+		right[t] = int(math.Max(float64(right[t+1]), float64(topo[t])))
 	}
 	addition := 0
 	for t := 0; t < n; t++ {

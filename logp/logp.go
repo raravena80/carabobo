@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"strings"
 	"regexp"
+	"strings"
 )
 
 func main() {
 	var (
 		capture bool = false
 		release bool = false
-		events []string
+		events  []string
 	)
 
 	file, e := ioutil.ReadFile("./samplelog")

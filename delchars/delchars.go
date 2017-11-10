@@ -7,8 +7,8 @@ import (
 
 var (
 	tail int
-	n int
-	arr []string
+	n    int
+	arr  []string
 )
 
 func main() {
