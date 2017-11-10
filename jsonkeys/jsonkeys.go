@@ -31,11 +31,11 @@ func iterate(data interface{}) interface{} {
 			match, _ := regexp.MatchString("$", k.String())
 			typeOfValue := reflect.TypeOf(d.MapIndex(k).Interface()).Kind()
 			if match {
-				new_key := strings.Replace(k.String(), "$", "", -1)
+				newKey := strings.Replace(k.String(), "$", "", -1)
 				if typeOfValue == reflect.Map || typeOfValue == reflect.Slice {
-					tmpData[new_key] = iterate(d.MapIndex(k).Interface())
+					tmpData[newKey] = iterate(d.MapIndex(k).Interface())
 				} else {
-					tmpData[new_key] = d.MapIndex(k).Interface()
+					tmpData[newKey] = d.MapIndex(k).Interface()
 				}
 			} else {
 				fmt.Println("debug")
@@ -58,8 +58,8 @@ func main() {
 		fmt.Printf("File error: %v\n", e)
 		os.Exit(1)
 	}
-	myJson := string(file)
-	m, ok := gjson.Parse(myJson).Value().(map[string]interface{})
+	myJSON := string(file)
+	m, ok := gjson.Parse(myJSON).Value().(map[string]interface{})
 	if !ok {
 		fmt.Println("Error")
 	}
